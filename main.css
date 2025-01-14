@@ -1,0 +1,15 @@
+.gameboy{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+body{
+    
+    background-color: black;
+}
+ .tamagotchi{
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    width:2000px;
+ }
