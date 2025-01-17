@@ -17,3 +17,8 @@ body{
 .gb{
     width: 290px;
 }
+.beat{
+    position: absolute;
+    top:483px;
+    right: 570px;
+}
