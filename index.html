@@ -5,10 +5,20 @@
     <title>tamagotchi </title>
 </head>
 <body>
+    <div class="container">
+        <div class="status-bar">
+            <div id="food"></div>
+            <div id="rest"></div>
+            <div id="happyness"></div>
+        </div>
+        <img src="images/hartje tamagochi.png" alt="heart" class="heart">
+        <div class="rema">
+            <img src="images/rema-bckground.png" alt="rema-bckground" class="house">
+        </div>
     <div class="gameboy">
         <img src="images/gameboy png.webp" alt="" class="gb">
        <img src="images/pixil-frame-0 (1).png" alt="" class="tamagotchi">
-        
+      
     </div> 
     <button class="beat" id="button">afspelen</button>
    <audio controls>
@@ -25,6 +35,36 @@
             audio.play();
         }
         
+   </script>
+   <script>
+        var food = 100;
+        var rest = 100;
+        var happyness = 100;
+        document.getElementById("food").innerHTML = food;
+        document.getElementById("rest").innerHTML = rest;
+        document.getElementById("happyness").innerHTML = happyness;
+
+        function stats_decrease() {
+            
+            if (food > 0) {
+                food--;
+            }
+            
+            if (rest > 0) {
+                rest--;
+            }
+            
+            if (happyness > 0) {
+                happyness--;
+            }
+
+            document.getElementById("food").innerText = food;
+            document.getElementById("rest").innerText = rest;
+            document.getElementById("happyness").innerText = happyness;
+
+        }
+
+        setInterval(stats_decrease, 1000);
    </script>
    <link rel="stylesheet" href="main.js">
 </body>

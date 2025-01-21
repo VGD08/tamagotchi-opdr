@@ -1,7 +1,7 @@
 .gameboy{
     display: flex;
     justify-content: center;
-    z-index: 1;
+    
     
 }
 body{
@@ -11,7 +11,8 @@ body{
  .tamagotchi{
     position: absolute;
     z-index: 2;
-    top: 85px;
+    top: 144px;
+    width: 200px;
     
  }
 .gb{
@@ -19,6 +20,36 @@ body{
 }
 .beat{
     position: absolute;
-    top:483px;
-    right: 570px;
+    top: 480px;
+    right: 565px;
 }
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    color:rgb(0, 0, 0);
+    }   
+    
+    .status-bar{
+        display: flex;
+        gap: 30px;
+        font-size: 2em;
+        position: absolute;
+        top: 43px;
+        z-index: 3;
+    }
+    .house{
+        width: 732px;
+        position: absolute;
+        top:-131px;
+        left: 255px;
+    }
+    .heart{
+        width: 206px;
+        position: absolute;
+        bottom: 334px;
+        left: 499px;
+        z-index: 2;
+    }
